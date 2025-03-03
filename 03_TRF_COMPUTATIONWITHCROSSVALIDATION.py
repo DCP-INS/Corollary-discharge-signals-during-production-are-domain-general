@@ -73,7 +73,7 @@ for day in days:
     for condition in condition_list:
         if (condition == 'produce_music') or (condition == 'perceive_music_produced'):
             if day == "day1":
-                matlab_file = features_path + 'seq_BouNi_musique-001-20220211144930_auddims_clean.mat'
+                matlab_file = features_path + 'seq_musique-001-20220211144930_auddims_clean.mat'
             if day == "day2":
                 matlab_file = features_path + 'AuditoryDimensions_48kHz_play_clean.mat'
                 print(matlab_file)
@@ -87,7 +87,7 @@ for day in days:
     
         elif (condition == 'produce_speech') or (condition == 'perceive_speech_produced'):
             if day == "day1":
-                matlab_file = features_path + 'seq_BouNi_Reading-001-20220211150422_auddims_clean.mat'
+                matlab_file = features_path + 'seq_Reading-001-20220211150422_auddims_clean.mat'
             if day == "day2":
                 matlab_file = features_path + 'AuditoryDimensions_48kHz_read_clean.mat'
                 print(matlab_file)
