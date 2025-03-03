@@ -15,10 +15,10 @@ from sklearn.model_selection import KFold
 for day in days: 
     
     # path to data files
-    data_path = "D:/data_mne/"
+    data_path = "./"
     
     # subject
-    subj = ['Bou_Ni']
+    subj = ['xx']
     sub_idx = 0 
     
     # list of conditions
@@ -319,5 +319,5 @@ for day in days:
     
             # store data
             with open(dictionary_path + '/' + str(condition) + "_" + str(
-                    picks[i_chan]) + "_" + band + "_" + day + "_test_TRF_results_crossvalidate.pickle", 'wb') as f:
+                    picks[i_chan]) + "_" + band + "_" + day + "_TRF_results.pickle", 'wb') as f:
                 pickle.dump(TRF, f)
